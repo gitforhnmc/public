@@ -1,0 +1,116 @@
+* {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style:none;
+        }
+        body,header,footer{
+            width:100%;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            /*양쪽정렬*/
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-bottom:3px solid  #dfe1e4;           
+        }
+        footer{
+            display: flex;
+            justify-content: flex-end;
+        }
+        header>span{
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 10px;
+            line-height: 45px;
+            /*margin: auto 0 ;*/
+        }
+        .number_form{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .number_form>input{
+            margin-right: 10px;
+            width: 196px;
+            height: 45px;
+            border: solid 2px #7d23b0;
+            text-align: center;
+        }
+        .number_form>div{
+            vertical-align;
+            width: 90px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            margin-right: 10px;
+            background: #7d23b0;
+            color: aliceblue;
+            border:2px solid #7d23b0;
+            cursor: pointer;
+        }
+        #wrap{
+            height:400px;
+        }
+        /*인원 입력 지시*/
+        .content_number_choice{
+            display: flex;
+            height: 400px;
+        }
+        
+        .content_number_choice>div{
+           text-align: center;
+            margin:auto;
+            color: #a6abac;
+        }
+        /*유저 입력칸*/
+        .content_userTextbox>ul{
+            display: flex;
+              
+        }
+        .content_userTextbox>ul>li>input{
+            text-align: center;
+            width: 131px;
+            height: 45px;
+            border: solid 2px #7d23b0;
+            margin: 10px;
+        }
+        
+        /*유저 입력칸들을 가운데로 정렬하기 위한 div*/
+        .wrap_content_userTextbox{
+            display: flex;
+        }
+        .content_userTextbox{
+            margin:auto;
+        }
+        .sadari_users_save{
+            vertical-align;
+            width: 90px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            margin-right: 10px;
+            background: #7d23b0;
+            color: aliceblue;
+            border:2px solid #7d23b0;
+            cursor: pointer;
+        }
+        /*사다리*/
+        table{
+            margin:0 auto;
+            border-collapse: collapse;
+        }
+        table tr td{
+            border:2px solid #cad0d1;
+            width:30px;
+            height:50px;
+        }
+        table tr th{
+            border:2px solid #cad0d1;
+            width:60px;
+            height:40px;
+        }
+        /*세로줄*/
+        table.sadari_table tr td:nth-child(2n+1){
+            border-right: 3px solid red;
+        }
