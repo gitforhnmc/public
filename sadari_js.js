@@ -65,19 +65,22 @@ $(document).ready(function(){
                                 }else{
                                     now_garo+=3;
                                 }
+                                //$('table.sadari_table tr:nth-child(2)').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
                                 //$('table.sadari_table tr:nth-child(5)').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
                                 //$('table.sadari_table tr:nth-child(7)').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
                                 //$('table.sadari_table tr:nth-child(10)').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
                                 //$('table.sadari_table tr:nth-child(12)').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
                             
-                            }                  
+                            }
+                        }
                     }else{
                         for(var eqNum=1; eqNum<=2; eqNum++){
                             for(var childNum=3; childNum<=last_garo; childNum+=5){
-                                $('table.sadari_table tr:nth-child(+'childNum'+)').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
+                                $('table.sadari_table tr:nth-child('+childNum+')').children('td').eq(2*i+eqNum).css({'border-bottom':'3px solid red'});
                             }
                         }
-            
+                    }
+                }
         });
             
             
