@@ -14,6 +14,7 @@ $(document).ready(function(){
             
         //유저 이름 입력 
         $('.sadari_users_save').click(function(){
+            
             var all_user_names='';
             var user_empty=false;
             $('.user_name').each(function(index){
@@ -32,6 +33,7 @@ $(document).ready(function(){
             });
                 //유저입력칸이 비어있으면 return
                 if(user_empty){
+                   
                  return false;  
                 }
                 
@@ -48,8 +50,8 @@ $(document).ready(function(){
                 var user_num=$('.sadari_top').length;
                
                 //마지막 가로줄 위치
-                var last_garo=$('.sadari_top tr').length-2;
-            
+                var last_garo=$('.sadari_table tr').length-2;
+                
                 for(var i=0;i<user_num-1;i++){
                     if(i%2==0){
                         for(var eqNum=1; eqNum<=2; eqNum++){
