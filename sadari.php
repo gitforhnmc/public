@@ -8,12 +8,6 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <link href="sadari_css.css" rel="stylesheet" type="text/css" media="screen">
     <script type="text/javascript" src="sadari_js.js"></script>
-
-    <style>
-        
-        
-        
-    </style>
     </head>
     <body>
         <header>
@@ -50,14 +44,14 @@
                             $usersSubmit = $_GET['number'];
                             for($i=1;$i<=$usersSubmit;$i++){
                         ?>
-
+                        
                         <li><input type="text" class="user_name" placeholder="user<?=$i?>"></li>
-
+                        
                         <?php 
                                 //한줄에 6칸 넘으면 줄 넘김
                                 if($i%6==0){
                         ?>
-                        <!--리스트 줄넘김--></ul><ul>    
+                        <!--리스트 줄넘김--></ul><ul>
                         <?php
                                 }
                             }
@@ -100,7 +94,6 @@
                     <?php } ?>
                     </tr>
                 </table>
-        
                 <!--연습-->
                 <table>
                     <?php for($j=1;$j<=2;$j++){ ?>
@@ -116,7 +109,6 @@
                         <?php } ?>
                     </tr>
                     <?php } ?>
-                    
                     <?php for($j=1;$j<=3;$j++){ ?>
                     <tr>
                         <?php for($i=1;$i<=$usersSubmit;$i++){ ?>
